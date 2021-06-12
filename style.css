@@ -40,3 +40,140 @@ nav {
   z-index: 999;
   transition: all 0.3s ease;
 }
+
+nav.sticky {
+  background: var(--primary-color);
+  padding: 13px 0;
+}
+
+nav .navbar {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+nav .navbar .logo a {
+  font-weight: 500;
+  font-size: 35px;
+  color: var(--primary-color);
+}
+nav .sticky .navbar .logo a {
+  color: var(--white-color);
+}
+nav .navbar .menu {
+  display: flex;
+  position: relative;
+}
+nav .navbar .menu li {
+  list-style: none;
+  margin: 0 8px;
+}
+nav .navbar .menu li a {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--black-color);
+  padding: 6px 0;
+  transition: all 0.4s ease;
+}
+nav .navbar .menu li a:hover {
+  color: var(--primary-color);
+}
+nav .sticky .menu li a {
+  color: var(--white-color);
+}
+nav .sticky .menu li a:hover {
+  color: var(--black-color);
+}
+
+nav .navbar .media-icons a {
+  color: var(--primary-color);
+  font-size: 18px;
+  margin: 0 6px;
+}
+nav .sticky .media-icons a {
+  color: var(--white-color);
+}
+
+/* Sidebar menu button */
+nav .menu-btn,
+.navbar .menu .cancel-btn {
+  position: absolute;
+  color: var(--primary-color);
+  right: 30px;
+  top: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: none;
+}
+
+nav .menu-btn {
+  color: var(--primary-color);
+}
+nav .sticky .menu-btn {
+  color: var(--white-color);
+}
+
+.navbar .menu .menu-btn {
+  color: var(--white-color);
+}
+
+/* Header ENDS */
+
+/* Home Section Start */
+.home {
+  height: 100vh;
+  width: 100%;
+  background: url("./images/background.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+.home .home-content {
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.home .text-one {
+  font-size: 25px;
+  color: var(--black-color);
+}
+.home .text-two {
+  color: var(--black-color);
+  font-size: 75px;
+  font-weight: 600;
+  margin-left: -5px;
+}
+.home .text-three {
+  font-size: 40px;
+  margin: 5px 0;
+  color: var(--primary-color);
+}
+.home .text-four {
+  font-size: 23px;
+  margin: 5px 0;
+  color: var(--black-color);
+}
+.home .button {
+  margin: 14px 0;
+}
+.home .button button {
+  outline: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 25px;
+  font-weight: 400;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid trasparent;
+}
+.home .button button:hover {
+  border-color: var(--primary-color);
+  background-color: var(--white-color);
+  color: var(--primary-color);
+}
